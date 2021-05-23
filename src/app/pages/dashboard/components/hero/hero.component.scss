@@ -1,0 +1,13 @@
+
+button {
+  &:hover {
+    .material-icons{
+      transform: translateX(10px);
+    }
+  }
+  transition: background 0.8s;
+  .material-icons{
+  transition: all ease-in-out 300ms;
+  }
+}
+

@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+/* Tailwind CSS Configs */
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100%;
+  min-width: 300px;
+  transition: background 0.8s;
+}
+
+.btn-primary {
+  @apply py-2 px-4 bg-black text-white font-semibold hover:bg-gray-600 cursor-pointer rounded;
+  transition: background 0.8s;
+}
+

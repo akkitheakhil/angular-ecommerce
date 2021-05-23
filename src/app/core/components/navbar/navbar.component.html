@@ -1,0 +1,126 @@
+<header
+  class="
+    sticky
+    top-0
+    z-50
+    bg-gray-100
+    border-b
+    md:flex
+    md:items-center
+    md:justify-between
+    p-4
+    pb-0
+    shadow-md
+    md:pb-4
+  "
+>
+  <!-- Logo text or image -->
+  <div class="flex items-center justify-between mb-4 md:mb-0">
+    <h1 class="leading-none text-2xl text-grey-darkest">
+      <a class="no-underline text-grey-darkest hover:text-black" href="#">
+        NG-ECom
+      </a>
+    </h1>
+
+    <div class="flex space-x-2 md:hidden">
+      <button class="text-black hover:text-orange" (click)="mobileNavClick()">
+        <span
+          class="material-icons cursor-pointer text-3xl hover:text-gray-700"
+        >
+          menu
+        </span>
+      </button>
+
+      <button class="ml-2">
+        <span
+          class="material-icons cursor-pointer text-3xl hover:text-gray-700"
+        >
+          shopping_cart
+        </span>
+      </button>
+    </div>
+  </div>
+  <!-- END Logo text or image -->
+
+  <!-- Search field -->
+
+  <form class="relative mb-4 w-full md:mb-0 md:w-1/4">
+    <span
+      class="
+        material-icons
+        absolute
+        left-3
+        top-1/2
+        transform
+        -translate-y-1/2
+        text-gray-400
+      "
+    >
+      search
+    </span>
+    <input
+      [(ngModel)]="searchText"
+      name="search"
+      class="
+        focus:border-gray-800
+        focus:ring-1 focus:ring-gray-800
+        focus:outline-none
+        w-full
+        text-sm text-black
+        placeholder-gray-500
+        border border-gray-200
+        rounded-md
+        py-2
+        pl-10
+      "
+      type="search"
+      aria-label="Search Products"
+      placeholder="Search Products"
+      autocomplete="off"
+    />
+    <div
+      class="
+        absolute
+        bg-gray-800
+        z-50
+        text-white
+        p-2
+        w-full
+        rounded
+        mt-1
+        overflow-hidden
+        max-h-64vh
+        lg:max-h-[550px]
+      "
+      *ngIf="!isSearching"
+    >
+      Hello <br />
+      hello <br />
+      Hello <br />
+      hello <br />
+      Hello <br />
+      hello <br />
+      Hello <br />
+      hello <br />
+    </div>
+  </form>
+
+  <!-- END Search field -->
+
+  <!-- Global navigation -->
+  <nav class="nav hidden md:block py-3">
+    <ul class="list-reset md:flex md:items-center">
+      <li class="md:ml-4">
+        <button class="btn-primary">LOGIN</button>
+      </li>
+      <li class="md:ml-4 hidden md:block">
+        <span
+          class="material-icons cursor-pointer text-3xl hover:text-gray-700"
+        >
+          shopping_cart
+        </span>
+      </li>
+    </ul>
+  </nav>
+  <!-- END Global navigation -->
+</header>
