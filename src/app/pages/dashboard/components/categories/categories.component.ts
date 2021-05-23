@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'ecom-categories',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./categories.component.scss']
 })
 export class CategoriesComponent implements OnInit {
+
+  public categories: string[] = ["Electronics", "Home", "Appliances", "Grocery", "Beauty & Care", "Toys"]
 
   constructor() { }
 
